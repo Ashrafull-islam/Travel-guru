@@ -1,14 +1,13 @@
 import Link from "next/link"
 import objects from '@/public/OBJECTS.png';
 import Image from "next/image";
-import { mulish } from "../layout";
 export default function NavBar(){
     const links=<>
-     <li><Link className={`${mulish.variable}`} href="/">Home</Link></li>
-     <li><Link className={`${mulish.variable}`}href="/packages">Packages</Link></li>
-     <li><Link className={`${mulish.variable}`}href="/testimonial">Testimonial</Link></li>
-     <li><Link className={`${mulish.variable}`}href="/blog">Blog</Link></li>
-     <li><Link className={`${mulish.variable}`}href="/contact">Contact</Link></li>
+     <li><Link  href="/">Home</Link></li>
+     <li><Link href="/packages">Packages</Link></li>
+     <li><Link href="/testimonial">Testimonial</Link></li>
+     <li><Link href="/blog">Blog</Link></li>
+     <li><Link href="/contact">Contact</Link></li>
     </>
     return(
         <div className="md:w-[72%] mx-auto">

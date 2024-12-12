@@ -6,14 +6,13 @@ import image4 from "@/public/Rectangle 7.png"
 import image5 from "@/public/Rectangle 9.png"
 import image6 from "@/public/Rectangle 11.png"
 import image7 from "@/public/Rectangle 10.png"
-import { mulish } from "../layout"
 
 export default function Destination_card(){
     return (
         <div className="md:w-[70%] mx-auto my-20">
             <div className="md:w-[600px] mx-auto">
-                <h2 className={`${mulish.variable} font-bold text-center text-[40px] text-[#131318]`}>Choose Your Destination</h2>
-                <p className={`${mulish.variable} text-center mb-20 mt-4 text-[16px] text-[#131318]`}>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                <h2 className={` font-bold text-center text-[40px] text-[#131318]`}>Choose Your Destination</h2>
+                <p className={` text-center mb-20 mt-4 text-[16px] text-[#131318]`}>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
             </div>
             <div className="md:flex gap-5 ">
             <Image
