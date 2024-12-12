@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NavBar from "./Components/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { Mulish } from "next/font/google";
+import Footer from "./Components/Footer";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Load the Mulish font
+export const mulish = Mulish({
+  subsets: ["latin"], // Include desired subsets
+  weight: ["400", "700"], // Add desired weights
+  variable: "--font-mulish", // Add a CSS variable for better integration
 });
 
 export const metadata: Metadata = {
@@ -25,9 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${mulish.variable} antialiased`}
       >
+        <div>
+          <NavBar></NavBar>
+        </div>
         {children}
+        <div>
+          <Footer></Footer>
+        </div>
       </body>
     </html>
   );
