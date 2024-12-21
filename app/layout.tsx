@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={mulish.variable}> {/* Use the font variable here */}
+    <html lang="en" data-theme="light" className={mulish.variable}> {/* Use the font variable here */}
       <body className="antialiased"> {/* Keep global body styles */}
         <div>
           <NavBar /> {/* Render NavBar */}
